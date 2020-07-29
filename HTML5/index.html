@@ -1,0 +1,42 @@
+<!-- 文档声明，声明为当前网页的版本为HTML5 -->
+<!DOCTYPE html>
+<!-- HTML 的根标签（元素），lang="en" 表示是用英语写的，en可以改成zh（中文） -->
+<html lang="en">
+<!-- HEAD 是网页的头部，主要用来帮助浏览器或搜索引擎来解析网页 -->
+<head>
+    <!-- meta标签用来设置网页的元数据 
+            charset 指定网页的字符集
+            name 指定的数据的名称
+            content 指定的数据的内容
+                name = "Keywords" 表示网站的关键字，可以同时指定多个关键字
+                name = "description"" 用于指定网站的描述
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 将页面重定向到另一个页面  3s后 -->
+    <meta http-equiv="refresh" content="3;url=https://www.baidu.com">
+    <!-- title 标签的内容作为搜索结果的超链接上的文字显示 -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- 超链接 ：是一个行内元素，但可以嵌套除它自身之外的所有元素 
+                    target属性：用来指定链接打开的位置
+                                可选项:_self 默认值，在当前页面上打开；_blank 在一个新的网页中打开超链接。
+                可以直接将超链接的href属性设置为#，这样点击超链接以后页面不会发生任何跳转，而是转到当前页面的顶部位置。
+                也可以跳转到页面的指定位置，只需要将href属性设置为 #id。
+                可以使用javascript:;来作为href的属性，此时点击超链接什么也不会发生。
+    -->
+    <a href="" target=""></a>
+    <!-- 一般在pc端，不建议修改图片大小 
+        图片的格式：
+                jpeg(jpg):支持颜色丰富，不支持透明效果，不支持动图，一般用来显示照片
+                gif:支持的颜色比较少，支持简单透明，支持动图
+                png:支持的颜色丰富，支持复杂透明，不支持动图（转为网页而生）
+                webp:谷歌推出的，具备其他图片的所有优点，而且文件特别小；缺点：兼容性不好
+                base64：将图片是哦那个base64编码，这样可以将图片转换为字符，通过字符形式引入图片，一般是一些需要和网页一起加载的图片才会使用base64
+    -->
+    <img src="" alt="" width="" height="">
+    <!--  frameborder 指定内内联框架的边框 0：没有 1：有-->
+    <iframe src="https://www.baidu.com" width="800" height="600" frameborder="1"></iframe>
+</body>
+</html>
