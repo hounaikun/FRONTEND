@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            背景：
+                背景颜色：background-color
+                背景图片：background-img
+                    - 可以同时设置背景图片和背景颜色，这样背景颜色将成为图片的背景色
+                    - 如果背景图片小于元素，则背景图片会自动在元素中平铺将元素铺满
+                    - 如果背景的图片大于元素，将会一个部分背景无法完全显示
+                    - 如果背景图片和元素一样大，则会直接正常显示
+                背景重复方式：background-repeat
+                    可选值：
+                        repeat 默认值，背景会沿着x轴 y轴双方向重复
+                        repeat-x 沿着x轴重复
+                        repeat-y 沿着y轴重复
+                        no-repeat 背景图片不重复
+                背景图片位置:background-positon
+                    设置方式：
+                        通过top、left、right、bottom、center设置
+                        使用方位词必须要同时指定两个值，如果只写一个则第二个默认为center
+
+                        通过偏移量来指定背景图片的位置：
+                            水平方向的偏移量 垂直方向变量
+                            如：background-position：100px 100px；
+
+                设置背景的范围
+                    background-clip
+                        可选值：
+                            border-box 默认值，背景会出现在边框的下边
+                            padding-box 背景不会出现在边框，只出现在内容区和内边距
+                            content-box 背景只会出现在内容区
+
+                    background-origin：背景图片的偏移量计算的原点
+                        padding-box 默认值，background-position 从内边距处开始计算
+                        content-box 背景图片的偏移量从内容区计算
+                        border-box 背景图片的偏移量从边框处开始计算
+                设置背景图片的大小：background-size
+                    第一个值代表宽度
+                    第二个值代表高度
+                    -如果只写一个，则第二个值默认是auto
+
+                    cover 图片的比例不变，将元素铺满
+                    contain 图片比例不变，将图片在元素中完整实现
+                设置图片是否根据元素移动：background-attachment
+                    -背景图片是否跟随元素移动
+                    -可选值：
+                        scroll 默认值 背景图片会跟随元素移动
+                        fixed 背景图片会固定在页面中，不会随着元素移动
+
+        */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
