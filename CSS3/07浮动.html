@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            padding: 10px;
+
+            /* 
+                通过浮动可以使一个元素向其父元素的左侧或者右侧移动
+                    使用 float 属性来设置元素的浮动
+                    可选值：
+                        none 默认值，不浮动
+                        left 元素向左浮动
+                        right 元素向右浮动
+                    
+                    注意：元素设置浮动之后，水平布局的等式就不用强制成立
+                            元素设置浮动以后，会完全从文档流中脱离，不在占用文档流的位置
+
+                    浮动的特点：
+                        1.浮动元素会完全脱离文档流，不在占据文档流中的位置
+                        2.设置浮动以后元素会向父元素的左侧或者右侧移动
+                        3.浮动元素默认不会从父元素中移动
+                        4.浮动元素不会盖住其他的浮动元素
+                        5.如果浮动元素的上边是一个没有浮动元素的块元素，则浮动元素无法上移
+            */
+            float: left;
+
+            /* 
+                高度塌陷的问题：
+                    在浮动布局中，父元素的高度默认是被子元素撑开的
+                        当子元素浮动后，其会完全脱离文档流，子元素会从文档流中脱离
+                        将会无法撑起父元素的高度，导致父元素的高度丢失
+
+                    父元素高度丢失之后，其下的元素会自动上移，导致页面的布局混乱
+            */
+
+            /* 
+                BFC（Block Formatting Context）块级格式化环境
+                    -BFC是一个css中的隐含属性，可以为一个元素开启BFC
+                        开启BFC该元素会变成一个独立的布局区域
+                    -元素开启BFC后的特点：
+                        1.开启BFC的元素不会被浮动元素所覆盖
+                        2.开启BFC的元素子元素和父元素外边距不会重叠
+                        3.开启BFC的元素可以包含浮动的子元素
+                    -可以通过一些特殊方式来开启元素的BFC：
+                        1.设置元素的浮动（不推荐）
+                        2.将元素设置为行内块元素（不推荐）
+                        3.将元素的overflow设置为一个非visible的值
+                            -常用的方式：为元素设置overflow：hidden开启其BFC，以使其可以包含浮动元素
+            */
+
+            /* 
+                clear：
+                    -作用：清除浮动元素对当前元素所产生的影响
+                    -可选值：
+                        left：清除左侧浮动元素对当前元素的影响
+                        right：清除右侧浮动元素对当前元素的影响
+                        both：清楚两侧中最大影响的那侧
+                    原理：
+                        设置清除浮动以后，浏览器会自动为元素添加一个上边距，
+                            以使其位置不受其他元素的影响
+            */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            padding: 20px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            垂直对齐：
+                vertical-align 设置元素垂直对齐的方式
+                可选值：
+                    baseline 默认值 基线对齐
+                    top 顶部对齐
+                    bottom 底部对齐
+                    middle 居中对齐
+            水平对齐：
+                text-align 属性规定元素中的文本的水平对齐方式
+                    left 	把文本排列到左边。默认值：由浏览器决定。
+                    right 	把文本排列到右边。
+                    center 	把文本排列到中间。
+                    justify 	实现两端对齐文本效果。
+                    inherit 	规定应该从父元素继承 text-align 属性的值。
+        */
+
+        /* 
+            white-space 设置网页如何处理空白
+
+                可选值：
+                    normal 正常
+                    nowrap 不换行
+                    pre 保留空白
+            
+            设置文字空白效果...
+        */
+        .box1{
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>  
+</body>
+</html>

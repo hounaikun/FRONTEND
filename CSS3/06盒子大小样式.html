@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            padding: 10px;
+            /* border: 10px red solid; */
+
+            /* 
+                box-sizing 用来设置盒子尺寸的计算方式（设置width和height的作用范围）
+                    可选值：
+                        content-box 默认值，宽度和高度设置内容区的大小
+                        border-box 宽度和高度用来设置整个盒子可见框（内容区、内边距、边框）的大小
+            */
+            box-sizing: border-box;
+
+            /* 
+                outline 用来设置元素的轮廓线，用法和border一摸一样
+                    轮廓和边框不同的点，就是轮廓不会影响到可见框的大小
+            */
+            /* outline: 10px red solid; */
+
+            /* 
+                box-shadow 用来设置阴影效果，阴影不会影响页面布局，默认情况下阴影在盒子的下方，和盒子一样大，被盒子所遮盖
+                    第一个值 水平偏移量 可以理解为margin-left
+                    第二个值 垂直偏移量 可以理解为margin-top
+                    第三个值 阴影的模糊半径
+                    第四个值 阴影的颜色
+            */
+            box-shadow: 5px 5px 5px orange;
+
+            /* 
+                border-radius:用来设置圆角；可以分别为四个角指定，从左上开始顺时针
+
+                    border-top-left-redius 。。。四个角都有
+
+                如果设置圆形：border-radius:50%;
+            */
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+</body>
+</html>

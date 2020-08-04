@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            我们开启了绝对定位后：
+                水平方向的布局等式就需要添加left和right两个值
+                    此时的规则和之前一样只是多添加了两个值;
+                        当发生过度约束：
+                            如果9个值中没有auto 则自动调整right值以使等式成立
+                            如果由auto，则自动调整auto的值以使等式满足
+                    
+                    - 可设置auto的值
+                        margin、width、left、right
+
+                    - 因为left 和right 的值默认是auto，所以如果不知道left和right
+                        则等式不满足时，会自动调整这两个值
+                    
+                垂直方向布局的等式也必须要满足等式。
+
+
+                
+        */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
