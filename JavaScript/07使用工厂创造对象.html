@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            使用工厂方法创建对象
+                通过该方法可以大批量的创建对象
+        */
+        function createPerson(name,age,gender){
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.gender = gender;
+            obj.sayName = function(){
+                alert(this.name);
+            }
+            return obj;
+        }
+        var obj = createPerson("张三",18,"男");
+        obj.sayName();
+    </script>
+</body>
+</html>

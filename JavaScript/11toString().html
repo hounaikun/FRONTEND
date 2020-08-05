@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            当我们直接打印一个对象时，事实上是输出对象的toString() 方法的返回值
+        */
+        function Person(name,age){
+            this.name = name;
+            this.age = age;
+            // toString = function(){
+            //     return this.name+" "+this.age;
+            // }
+        }
+        var per = new Person("王五",18);
+        per.__proto__.toString = function(){
+            return "aaaaaaaaaaaaaa";
+        }
+        console.log(per);
+    </script>
+</body>
+</html>

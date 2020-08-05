@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            JS 数据类型：
+                - String 字符串
+                - Number 数值
+                - Bollean 布尔值
+                - Null 空值
+                - Undefined 未定义
+                    以上五种类型属于基本数据类型，以后我们看到的值只要不是上边的五种，全都是对象
+                - Object 对象
+
+            typeof运算符使用：
+                typeof运算符返回变量或表达式的类型：
+                    1. 'undefined'              --未定义的变量或值
+                    2. 'boolean'                --布尔类型的变量或值
+                    3. 'string'                 --字符串类型的变量或值
+                    4. 'number'                 --数字类型的变量或值
+                    5. 'object'                 --对象类型的变量或值，或者null(这个是js历史遗留问题，将null作为object类型处理)
+                    6. 'function'               --函数类型的变量或值   
+
+        */
+        function fun(){
+
+        }
+        var obj = new Object();
+        console.log(typeof(123));
+        console.log(typeof("123"));
+        console.log(typeof(true));
+        console.log(typeof(a));
+        console.log(typeof(null));
+        console.log(typeof(fun));
+        console.log(typeof(obj));
+    </script>
+</body>
+</html>

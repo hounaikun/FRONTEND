@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            创建对象
+                使用new关键字调用函数，是构造函数constructor
+                    构造函数是专门用来创建对象的
+         */
+        var obj = new Object();
+        /*
+            在对象中保存的值成为属性，属性值可以是任意类型（也可以是对象）
+            向对象添加属性
+                语法：对象.属性名 = 属性值；
+                    或者
+                     对象["属性名"] = 属性值；（读取也要采用这种方式，这种方式可以使用特殊的属性名）
+        */
+        obj.name = "孙悟空";
+        obj.age = 18;
+        obj.per = new Object();
+        obj.per.name= "bajie";
+        console.log(obj);
+        /*
+            in 运算符
+                - 通过该运算符可以检查一个对象中是否含有指定的属性
+                - 语法：
+                    "属性名" in 对象
+        */
+       console.log("per" in obj);
+       /*
+            使用对象字面量，可以在创建对象时，直接指定对象中的属性
+            语法：{属性名：属性值，属性名：属性值....}
+                属性名可以加引号也可以不加，建议不加
+       */
+       var obj2 = {
+           name:"猪八戒",
+           age:20,
+           gender:"男"
+       }
+       console.log(obj2);
+       /*
+            枚举对象中的属性
+                使用for ... in 语句
+            语法：
+                for(var 变量 in 对象){
+
+                }
+            对象有几个属性，循环体就会执行几次
+                每次执行时，会将对象中的一个属性名赋值给变量
+       */
+       for(var o in obj2){
+           console.log(o+" "+obj2[o])
+       }
+    </script>
+</body>
+</html>
