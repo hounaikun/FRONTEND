@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            原型链：
+                访问一个对象属性时，
+                    先在自身属性中查找，找到返回
+                    如果没有，再沿着__prototype__这条链向上查找，找到返回
+                    如果最终没有找到，返回underfined
+                别名：隐式原型链
+                作用：查找对象的属性（方法）
+
+        */
+        // 1. 函数的显示原型指向的对象默认是空Object实例对象（但Object不满足）
+            console.log(Object.prototype instanceof Object); //false 因为Object.prototype的隐式原型指向为null
+        //  2.所有函数都是Function的实例（包含Function）
+            console.log(Function instanceof Function); //true
+        /*
+            原型链-属性问题
+                1.读取对象的属性值时：会自动到原型链中查找
+                2.设置对象的属性值时，不会查找原型链，如果当前对象中没有此属性，直接添加此属性并设置其值
+                3.方法一般定义再原型中，属性一般通过构造函数定义再对象本身
+
+            4.每个构造函数都有一个显示原型和隐式原型
+        */
+
+        //测试题1
+        function A() {
+
+        }
+        A.prototype.n =1;
+        var b = new A()
+        A.prototype = {
+            n : 2,
+            m : 3
+        }
+        var c = new A();
+        console.log(b.n,b.m,c.n,c.m);
+
+        //测试题2
+        console.log(Object.__proto__ == Function.prototype); 
+
+        //测试题3
+        function F(){
+        }
+        Object.prototype.a = function(){
+            console.log('a()')
+        }
+        Function.prototype.b = function(){
+            console.log('b()')
+        }
+        var f = new F()
+        f.a(); //a()
+        //f.b(); //not function
+        F.a(); //当F调用方法时，就相当于一个对象，这时就要找（隐式）原型链 a()
+        F.b(); //b()
+
+    </script>
+</body>
+</html>
