@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6dc4157-912b-4bac-93f9-d85b8e025ea6" name="Default Changelist" comment="" />
+    <list default="true" id="d6dc4157-912b-4bac-93f9-d85b8e025ea6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +22,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -36,6 +38,9 @@
       <workItem from="1597021536704" duration="58000" />
       <workItem from="1597021945955" duration="319000" />
       <workItem from="1597022290444" duration="33000" />
+      <workItem from="1597067110586" duration="106000" />
+      <workItem from="1597067240233" duration="93000" />
+      <workItem from="1597067342217" duration="33000" />
     </task>
     <servers />
   </component>
@@ -43,13 +48,19 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1597022238549">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="380" y="199" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1597067331247">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="380" y="199" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1597067331247" />
+    <state x="493" y="163" key="FileChooserDialogImpl" timestamp="1597067329661">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="493" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597067329661" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597022238549" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1597022319870">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="202" y="0" key="SettingsEditor" timestamp="1597067361316">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="202" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1597067361316" />
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597022319870" />
   </component>
 </project>
