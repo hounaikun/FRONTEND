@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <style>
+    <script>
         /*
             全局作用域：
                 - 全局作用域的变量都是全局变量
@@ -26,6 +26,30 @@
                 - 在函数中不使用var生命的变量都会成为全局变量
                 - 定义形参相当于在函数作用域中声明了变量
         */
-    </style>
+
+        //面试题1
+        var x = 10
+        function fun() { //每个函数都会创建自己的作用域，作用域在函数定义时就已经确定了，而不是在函数调用时
+            console.log(x)
+        }
+        function show(f) {
+            var x = 20
+            f()
+        }
+        show(fun) //10
+
+        //面试题2
+        function fn() {
+            console.log(fn)
+        }
+        fn()
+        var obj ={
+            fn2:function () {
+                // console.log(fn2) //fn2 is not defined 因为在fn2函数中找不到fn2这个变量，那么会去全局找，也找不到，因为全局时window.obj.fn2
+                console.log(this.fn2)
+            }
+        }
+        obj.fn2()
+    </script>
 </body>
 </html>
