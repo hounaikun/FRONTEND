@@ -20,7 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6dc4157-912b-4bac-93f9-d85b8e025ea6" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/JavaScript/23执行上下文.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript/24执行上下文栈.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript/25作用域与执行上下文的区别.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript/26闭包.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/04声明提前.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/04声明提前.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/05作用域.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/05作用域.html" afterDir="false" />
+>>>>>>> 1c9a4c469739595b48f648e2c62806ba394c6430
+>>>>>>> 23b803fbcd0ad18b6a59193f19959be68cb67c10
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +79,19 @@
       <workItem from="1597021536704" duration="58000" />
       <workItem from="1597021945955" duration="319000" />
       <workItem from="1597022290444" duration="33000" />
+<<<<<<< HEAD
+      <workItem from="1597067110586" duration="106000" />
+      <workItem from="1597067240233" duration="93000" />
+      <workItem from="1597067342217" duration="33000" />
+=======
       <workItem from="1597022329689" duration="952000" />
       <workItem from="1597023316630" duration="2112000" />
+<<<<<<< HEAD
       <workItem from="1597112283836" duration="8958000" />
+=======
+      <workItem from="1597112283836" duration="5845000" />
+>>>>>>> 1c9a4c469739595b48f648e2c62806ba394c6430
+>>>>>>> 23b803fbcd0ad18b6a59193f19959be68cb67c10
     </task>
     <servers />
   </component>
@@ -87,6 +111,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
+    <state x="380" y="199" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1597067331247">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="380" y="199" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1597067331247" />
+    <state x="493" y="163" key="FileChooserDialogImpl" timestamp="1597067329661">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="493" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597067329661" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597022238549" />
+    <state x="202" y="0" key="SettingsEditor" timestamp="1597067361316">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="202" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1597067361316" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597022319870" />
+=======
     <state x="709" y="389" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1597023285175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -99,5 +139,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597023001849" />
+>>>>>>> 1c9a4c469739595b48f648e2c62806ba394c6430
   </component>
 </project>
