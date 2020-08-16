@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+            闭包一：
+                将函数作为另一个函数的返回值
+         */
+        function f1() {
+            var a = 2;
+            function f2() {
+                a++;
+                console.log(a)
+            }
+            return f2
+        }
+        var f = f1()
+        f()
+        f()
+
+        /*
+        *   闭包二：
+        *       将函数作为实参传递给另一个函数调用
+        * */
+        function showDelay(msg,time) {
+            setTimeout(function () {
+                alert(msg)
+            },time)
+        }
+        showDelay("happy",2000)
+    </script>
+</body>
+</html>
