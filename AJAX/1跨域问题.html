@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * 一、同源策略：
+        *   是浏览器的一种安全策略
+        *   同源（same-origin policy）
+        *       协议，域名，端口号 必须完全按相同
+        *   违背同源策略就是跨域
+        * 二、如何解决跨域？
+        *   JSONP
+        *       1.是什么?
+        *           非官方解决方案，只支持get请求
+        *       2.原理？
+        *           网页有一些标签天生就具有跨域问题，比如：img link iframe script
+        *           jsonp 就是利用script标签来发送请求的
+        *       3.怎么玩的？
+        *           动态创建一个script标签
+        *           var script = document.createElement("script");
+        *           设置script的src,设置回调函数
+        *           script.src = "http://localhost:8000/testAjax?callback=abc";
+        * */
+    </script>
+</body>
+</html>

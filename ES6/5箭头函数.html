@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * 1.this 是静态的，this始终指向函数声明时所在作用域下的this的值
+        * */
+        function getName() {
+            console.log(this.name);
+        }
+        let getName2 = () => {
+            console.log(this.name);
+        }
+
+        window.name = 'global name'
+        const school = {
+            name:'school name'
+        }
+
+        getName() //global name
+        getName2() //global name
+
+        getName.call(school) //school name
+        getName2.call(school) //global name
+    </script>
+</body>
+</html>

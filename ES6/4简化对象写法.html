@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * ES6允许在大括号里面，直接写入变量和函数，作为对象的属性和方法
+        * */
+        let name = '嗡嗡嗡'
+        let change = function () {
+            console.log("改变世界");
+        }
+
+        const school = {
+            name,
+            change,
+            improve(){
+                console.log("提高自己");
+            }
+        }
+        console.log(school);
+    </script>
+</body>
+</html>

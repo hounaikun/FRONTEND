@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        *方式一：
+        *   Object构造函数模式
+        * */
+        var p = new Object()
+        p.name="tom"
+        p.age = 12
+        p.setName = function (name) {
+
+        }
+        /*
+        * 方式二：
+        *   对象字面量模式
+        * */
+        var p2 = {
+            name:'tom',
+            age:12,
+            setName:function () {
+
+            }
+        }
+        /*
+        * 方式三：
+        *   工厂模式
+        * */
+        function createPerson(name,age) {
+            return {
+                name : name,
+                age: age,
+                setName: function () {
+                    this.name = name
+                }
+            }
+        }
+        /*
+        * 方式四：
+        *   自定义构造器函数
+        * */
+        function Person(name,age) {
+            this.name = name
+            this.age = age
+            this.setName = function (name) {
+                this.name = name;
+            }
+        }
+        /*
+        * 方式五：
+        *   构造函数 + 原型的组合模式
+        * */
+        function Person2(name,age) {
+            this.name = name
+            this.age = age
+        }
+        Person2.prototype.setName = function () {
+            this.name = name;
+        }
+    </script>
+</body>
+</html>
