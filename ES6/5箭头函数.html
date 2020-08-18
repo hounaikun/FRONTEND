@@ -26,6 +26,20 @@
 
         getName.call(school) //school name
         getName2.call(school) //global name
+
+        //2.不能作为构造实例化对象
+        let Person = (name,age)=>{
+            this.name = name;
+            this.age = age;
+        }
+        // let me = new Persion("xiao",33)
+        //console.log(me); //ncaught ReferenceError: Persion is not defined
+
+        //3.不能使用arguments变量
+        let fn = () => {
+            console.log(arguments);//Uncaught ReferenceError: arguments is not defined
+        }
+        fn(1,2,3)
     </script>
 </body>
 </html>

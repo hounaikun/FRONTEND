@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * 扩展运算符... 可以将数组转换为 逗号 分隔符分割的 参数序列
+        * */
+        const TFBOYS= ['yyqx','wy','wjk']
+        function cc() {
+            console.log(arguments);
+        }
+        cc(...TFBOYS)
+
+        //应用1:数组合并
+        const kk= ['yyqx','wy','wjk']
+        const zz= ['zjl','ljj','zj']
+        const bb = [...kk,...zz]
+        console.log(bb);
+        //应用2:数组的克隆
+        const kk1= ['yyqx','wy','wjk']
+        const zz1= [...kk1]
+        console.log(zz1 === kk1);
+        //应用3：将伪数组转为真正的数组
+        let elementsByTagName = document.getElementsByTagName("div");
+        const divs = [...elementsByTagName]
+
+    </script>
+</body>
+</html>
