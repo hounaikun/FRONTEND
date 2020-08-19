@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="module"> /*必须加上type="module"*/
+
+        //第一种：所有暴露的都会放在Module对象里面，Module对象的实例名称为m1
+        import * as m1 from "./18es6模块化1.js"
+        console.log(m1);
+        m1.default.fun()
+        //第二种：解构赋值
+        import {default as d,a,b,f} from "./18es6模块化1.js"  //default必须赋别名
+        console.log(d);
+        console.log(a,b,f)
+        //第三种：简便形式，针对默认暴露
+        import m3 from "./18es6模块化1.js"
+        console.log(m3);
+    </script>
+</body>
+</html>

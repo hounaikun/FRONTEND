@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+        /*
+        * Promise对象代表一个异步操作，有三种状态：pending（进行中）、fulfilled（已成功）和rejected（已失败）。只有异步操作的结果，
+        *   可以决定当前是哪一种状态，任何其他操作都无法改变这个状态。
+        * Promise对象的状态改变，只有两种可能：从pending变为fulfilled和从pending变为rejected。只要这两种情况发生，状态就凝固了，
+        *   不会再变了，会一直保持这个结果，这时就称为 resolved（已定型）。如果改变已经发生了，你再对Promise对象添加回调函数，也会立即得到这个结果。
+        * */
+        const p = new Promise(function (resolve,reject) {
+            setTimeout(function () {
+                let success = "数据请求成功"
+                let error = "数据请求失败"
+                resolve(success)
+                // reject(error)
+            }, 1000)
+        })
+
+        p.then(function (value) {
+            // console.log(value);
+        },function (value) {
+            // console.log(value);
+        })
+
+        /*
+        * then方法的第一个参数是resolved状态的回调函数，第二个参数（可选）是rejected状态的回调函数。
+        * then方法返回的是一个新的Promise实例（注意，不是原来那个Promise实例），对象状态由回调函数的执行结果决定
+        *   1.如果回调函数中返回时非Promise类型的属性，状态为成功fulfilled，返回值称为Promise的成员
+        *
+        *
+        * 第一个回调函数完成以后，会将返回结果作为参数，传入第二个回调函数。
+        * */
+        // console.log(p.then(function (value) {
+        //     console.log(value);
+        //     return "value";
+        // }));
+        p.then(function (value) {
+            console.log(value);
+            return new Promise(function (resolve,reject) {
+                setTimeout(function () {
+                    let success = "数据请求成功"
+                    let error = "数据请求失败"
+                    // resolve(success)
+                    reject(error)
+                }, 1000)
+            })
+        }).then(function (value) {
+            console.log(value);
+        },function (value) {
+            console.log(value);
+        })
+
+        /*
+        *Promise.prototype.catch()方法是.then(null, rejection)或.then(undefined, rejection)的别名，用于指定发生错误时的回调函数
+        * */
+</script>
+</body>
+</html>

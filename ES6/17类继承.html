@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        *
+        * */
+        class Phone{
+            constructor(brand,price) {
+                this.brand = brand
+                this.price = price
+            }
+            call(){
+                console.log("我可以打电话");
+            }
+        }
+        class SmartPhone extends Phone{
+            constructor(brand,price,color,size) {
+                super(brand,price);
+                this.color = color
+                this.size = size
+            }
+            photo(){
+                console.log("拍照");
+            }
+            call() {
+                super.call(); //调用父类的方法，由于super指向父类的原型对象，所以定义在父类实例上的方法或属性，是无法通过super调用的。
+                console.log("我可以开视频");
+            }
+        }
+        let huawei = new SmartPhone("huawei",5000,"黑色",6.5)
+        huawei.call()
+
+    </script>
+</body>
+</html>

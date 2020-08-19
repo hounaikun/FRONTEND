@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function getUsers() {
+            setTimeout(function () {
+                let data = '用户数据'
+                g.next(data)
+            },1000)
+        }
+        function getOrders(user) {
+            setTimeout(function () {
+                let data = "通过"+user.slice(-4)+"得到订单数据"
+                g.next(data)
+            },1000)
+        }
+        function getGoods(order) {
+            setTimeout(function () {
+                let data = '通过'+order.slice(-4)+'得到商品'
+                g.next(data)
+            },1000)
+        }
+        function * gen() {
+            let users = yield getUsers()
+            console.log(users);
+            let orders = yield getOrders(users)
+            console.log(orders);
+            let goods =yield getGoods(orders)
+            console.log(goods);
+        }
+        let g = gen()
+        g.next()
+    </script>
+</body>
+</html>

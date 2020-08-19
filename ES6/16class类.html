@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        *
+        * */
+        class Person{
+            //静态属性指的是 Class 本身的属性，即Class.propName，而不是定义在实例对象（this）上的属性。
+            static body = "四肢" //静态属性，只能Person调用
+            static say(){//静态方法  只能Person调用
+                console.log("i am ok");
+            }
+
+            constructor(name,age) {
+                this.name = name
+                this.age = age
+            }
+
+            setName(name){
+                this.name = name
+            }
+        }
+        let p = new Person("xiaoming",18)
+        p.setName("uzi")
+        console.log(p);
+        console.log(Person.body);
+        Person.say();
+    </script>
+</body>
+</html>
