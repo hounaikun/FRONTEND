@@ -20,7 +20,6 @@
 * */
 import m1 from "./module1.js"
 import {a,fun} from "./module2.js"
-import $ from "jquery"
 
 console.log(a);
 fun()
