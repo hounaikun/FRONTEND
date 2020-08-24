@@ -1,6 +1,7 @@
 /*
   loader: 1. 下载   2. 使用（配置loader）
   plugins: 1. 下载  2. 引入  3. 使用
+    npm install --save-dev html-webpack-plugin
 */
 const {resolve} = require("path")
 const htmlWebpackPlugin = require("html-webpack-plugin")
